@@ -1,5 +1,5 @@
 <template>
-  <div>
-    <NuxtWelcome />
-  </div>
+	<div>
+		<NuxtWelcome class="max-w-full" />
+	</div>
 </template>

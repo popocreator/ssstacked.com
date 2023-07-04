@@ -2,8 +2,11 @@
 	"name": "nuxt-app",
 	"private": true,
 	"scripts": {
-		"build": "nuxt build",
-		"dev": "nuxt dev -o",
+		"build": "nuxi build",
+		"dev": "nuxi dev",
+		"test": "vitest run --coverage",
+		"build:nuxt": "nuxt build",
+		"dev:nuxt": "nuxt dev -o",
 		"generate": "nuxt generate",
 		"preview": "nuxt preview",
 		"postinstall": "nuxt prepare"
@@ -11,11 +14,20 @@
 	"devDependencies": {
 		"@nuxt/content": "^2.7.0",
 		"@nuxt/devtools": "latest",
+		"@nuxtjs/tailwindcss": "^6.8.0",
+		"@pinia/nuxt": "^0.4.11",
 		"@types/axios": "^0.14.0",
 		"@types/node": "^18",
+		"@types/uuid": "^9.0.2",
+		"@vitest/coverage-v8": "^0.32.4",
 		"axios": "^1.4.0",
 		"msw": "^1.2.2",
 		"nuxt": "^3.6.1",
+		"vitest": "^0.32.4",
 		"vue-gtag-next": "^1.14.0"
+	},
+	"dependencies": {
+		"pinia": "^2.1.4",
+		"uuid": "^9.0.0"
 	}
 }
