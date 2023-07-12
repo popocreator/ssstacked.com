@@ -59,17 +59,19 @@
 	let _sqrt = Math.sqrt;
 	let _cos = Math.cos;
 	let _sin = Math.sin;
+
 	const _isString = (value) => typeof value === 'string';
 	const _isFunction = (value) => typeof value === 'function';
 	const _isNumber = (value) => typeof value === 'number';
 	const _isUndefined = (value) => typeof value === 'undefined';
 	const _isObject = (value) => typeof value === 'object';
 	const _isNotFalse = (value) => value !== false;
-	const _windowExists = (value) => typeof window !== 'undefined';
+	const _windowExists = () => typeof window !== 'undefined';
 	const _isFuncOrString = (value) => _isFunction(value) || _isString(value);
 	const _isTypedArray = (value) =>
 		typeof ArrayBuffer === 'function' && (ArrayBuffer.isView || function () {});
 	const _isArray = Array.isArray;
+
 	const _strictNumExp = /(?:-?\.?\d|\.)+/gi;
 	const _numExp = /[-+=.]*\d+[.e\-+]*\d*[e\-+]*\d*/g;
 	const _numWithUnitExp = /[-+=.]*\d+[.e-]*\d*[a-z%]*/g;
@@ -77,6 +79,7 @@
 	const _relExp = /[+-]=-?[.\d]+/;
 	const _delimitedValueExp = /[^,'"\[\]\s]+/gi;
 	const _unitExp = /^[+\-=e\s\d]*\d+[.\d]*([a-z]*|%)\s*$/i;
+
 	let _globalTimeline;
 	let _win;
 	let _coreInitted;
@@ -84,6 +87,7 @@
 	let _globals = {};
 	let _installScope = {};
 	let _coreReady;
+
 	const _install = (scope) => (_installScope = _merge(scope, _globals)) && gsap;
 	const _missingPlugin = (property, value) =>
 		console.warn(
@@ -101,6 +105,7 @@
 			(_installScope[name] = obj)) ||
 		_globals;
 	const _emptyFunc = () => 0;
+
 	let _startAtRevertConfig = {
 		suppressEvents: true,
 		isStart: true,
