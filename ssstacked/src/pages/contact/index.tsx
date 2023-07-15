@@ -2,13 +2,13 @@ import Head from 'next/head';
 import styles from './index.module.css';
 import LandingLayout from '@/layouts/LandingLayout';
 
-export default function About() {
+export default function Contact() {
 	return (
 		<LandingLayout>
 			<Head>
-				<title>About</title>
+				<title>Contact</title>
 			</Head>
-			<main>About</main>
+			<main>Contact</main>
 		</LandingLayout>
 	);
 }
