@@ -9,6 +9,7 @@ export default function Home() {
 				<title>Home</title>
 			</Head>
 			<main>Home</main>
+			<div style={{height: '500vh'}}></div>
 		</LandingLayout>
 	);
 }
