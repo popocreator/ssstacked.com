@@ -1,11 +1,23 @@
-.header {
+.stickyHeader {
 	position: sticky;
 	top: 0;
 	left: 0;
 	width: 100%;
+	height: 180px;
+	transition: top 0.5s;
+}
+.topBanner {
+	width: 100%;
+	height: 80px;
+	background-color: #37ff69dd;
+}
+.header {
+	position: absolute;
+	top: 80px;
+	left: 0;
+	width: 100%;
 	height: 100px;
 	background-color: #faebd7dd;
-	transition: top 0.3s;
 }
 .container {
 	display: flex;
@@ -18,6 +30,9 @@
 	margin: 0 auto;
 	padding: 0 30px;
 	background-color: aliceblue;
+}
+.topBanner {
+	height: 80px;
 }
 .gnb {
 	display: flex;
