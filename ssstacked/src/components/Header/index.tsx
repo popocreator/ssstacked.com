@@ -10,7 +10,7 @@ import Link from 'next/link';
 
 export default function Header() {
 	const router = useRouter();
-	const headerHeight = 100;
+	const headerHeight = 120;
 	const topBannerHeight = 80;
 	const [headerVisible, setHeaderVisible] = useState(true);
 
