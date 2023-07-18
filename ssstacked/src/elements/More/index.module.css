@@ -1,0 +1,49 @@
+.more_button {
+	height: 30px;
+	width: 40px;
+	position: relative;
+	padding: 0;
+	margin: 0;
+	margin-left: auto;
+	cursor: pointer;
+}
+.more_line_1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2px;
+	width: 100%;
+	background-color: #333;
+}
+.more_button:hover .more_line_1 {
+	top: 14px;
+	transform-origin: left;
+	transform: rotateZ(-45deg);
+	width: 80%;
+	/* transition: transform 0.3s; */
+	transition: all 0.3s;
+}
+.more_line_2 {
+	position: absolute;
+	top: 14px;
+	left: 0;
+	height: 2px;
+	width: 100%;
+	background-color: #333;
+}
+.more_line_3 {
+	position: absolute;
+	top: 28px;
+	left: 0;
+	height: 2px;
+	width: 100%;
+	background-color: #333;
+}
+.more_button:hover .more_line_3 {
+	top: 14px;
+	transform-origin: left;
+	transform: rotateZ(45deg);
+	width: 80%;
+	/* transition: transform 0.3s; */
+	transition: all 0.3s;
+}

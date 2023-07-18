@@ -1,13 +1,14 @@
 import styles from './index.module.css';
+import LogoImage from '@/assets/logo.svg';
+import Link from 'next/link';
 import React from 'react';
 
 export default function Logo() {
 	return (
-		<h1 className={styles.logo}>
-			<span>S</span>
-			<span>S</span>
-			<span>S</span>
-			<span>TACKED</span>
+		<h1 className={styles.logo} title='Homepage Logo'>
+			<Link href='/'>
+				<LogoImage />
+			</Link>
 		</h1>
 	);
 }
