@@ -46,11 +46,24 @@ export default function Header() {
 				<div className={styles.container}>
 					<Logo />
 					<ul className={styles.gnb}>
-						<GlobalLink href='/'>Home</GlobalLink>
-						<GlobalLink href='/about'>About</GlobalLink>
-						<GlobalLink href='/services'>Services</GlobalLink>
-						<GlobalLink href='/blog'>Blog</GlobalLink>
-						<GlobalLink href='/contact'>Contact</GlobalLink>
+						<GlobalLink active={'/' === router.pathname} href='/'>
+							Home
+						</GlobalLink>
+						<GlobalLink active={'/about' === router.pathname} href='/about'>
+							About
+						</GlobalLink>
+						<GlobalLink
+							active={'/services' === router.pathname}
+							href='/services'
+						>
+							Services
+						</GlobalLink>
+						<GlobalLink active={'/blog' === router.pathname} href='/blog'>
+							Blog
+						</GlobalLink>
+						<GlobalLink active={'/contact' === router.pathname} href='/contact'>
+							Contact
+						</GlobalLink>
 					</ul>
 					<More />
 				</div>
