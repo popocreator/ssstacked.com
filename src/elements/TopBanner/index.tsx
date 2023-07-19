@@ -1,7 +1,7 @@
 import styles from './index.module.css';
 import React from 'react';
 import Image from 'next/image';
-import UkrainianFlag from '@/assets/ukrainian-flag.png';
+import UkrainianFlag from '~/ukrainian-flag.png';
 
 export default function TopBanner() {
 	return (
