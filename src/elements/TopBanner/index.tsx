@@ -1,12 +1,11 @@
 import styles from './index.module.css';
 import React from 'react';
 import Image from 'next/image';
-import UkrainianFlag from '~/ukrainian-flag.png';
 
 export default function TopBanner() {
 	return (
 		<section className={styles.topBanner}>
-			<Image src={UkrainianFlag} alt={'Ukraine Flag'} />
+			<Image src={'/ukrainian-flag.png'} alt={'Ukraine Flag'} />
 			<p className={styles.test}>
 				Stop the War.{' '}
 				<span className={styles.topBannerText_desktop}>
