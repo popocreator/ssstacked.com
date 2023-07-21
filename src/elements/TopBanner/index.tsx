@@ -1,12 +1,22 @@
-import Image from 'next/image';
+import Image, {ImageLoaderProps} from 'next/image';
 import styles from './index.module.css';
 import React from 'react';
-import UkrainianFlag from '/public/images/ukrainian-flag.png';
+import UkraineFlag from '@/assets/ukrainian-flag.png';
+
+const imageLoader = ({src, width, quality}: ImageLoaderProps) => {
+	return `${src}?w=${width}&&q=${quality || 75}`;
+};
 
 export default function TopBanner() {
 	return (
 		<section className={styles.topBanner}>
-			<Image src={UkrainianFlag} alt={'Ukraine Flag'} />
+			<Image
+				src={UkraineFlag}
+				alt={'Ukraine Flag'}
+				width={40}
+				height={80}
+				loader={imageLoader}
+			/>
 			<p className={styles.test}>
 				Stop the War.{' '}
 				<span className={styles.topBannerText_desktop}>
