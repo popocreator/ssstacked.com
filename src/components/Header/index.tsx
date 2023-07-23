@@ -8,7 +8,11 @@ import More from '@/elements/More';
 import GlobalLink from '@/elements/GlobalLink';
 import Link from 'next/link';
 
-export default function Header() {
+interface HeaderProps {
+	onClickMore?: () => void;
+}
+
+export default function Header({onClickMore}: HeaderProps) {
 	const router = useRouter();
 	const headerHeight = 120;
 	const topBannerHeight = 80;
@@ -65,7 +69,7 @@ export default function Header() {
 							Contact
 						</GlobalLink>
 					</ul>
-					<More />
+					<More onClick={onClickMore} />
 				</div>
 			</header>
 		</div>
