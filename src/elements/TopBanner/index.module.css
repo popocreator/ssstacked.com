@@ -1,5 +1,18 @@
 .topBanner {
 	width: 100%;
 	height: 80px;
-	background-color: #37ff69dd;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(115deg, #78ddfadd, #aeeafcdd);
+}
+.topBannerText {
+	/* font-weight: bold; */
+	color: #000;
+	margin-left: 20px;
+}
+.topBannerText a {
+	color: #000;
+	/* margin-left: 10px; */
 }

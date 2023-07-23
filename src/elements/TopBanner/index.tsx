@@ -13,11 +13,11 @@ export default function TopBanner() {
 			<Image
 				src={UkraineFlag}
 				alt={'Ukraine Flag'}
-				width={40}
-				height={80}
+				// width={40}
+				height={36}
 				loader={imageLoader}
 			/>
-			<p className={styles.test}>
+			<p className={styles.topBannerText}>
 				Stop the War.{' '}
 				<span className={styles.topBannerText_desktop}>
 					Support Ukraine.{' '}
