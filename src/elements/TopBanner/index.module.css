@@ -5,14 +5,23 @@
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	background: linear-gradient(115deg, #78ddfadd, #aeeafcdd);
+	/* background: linear-gradient(115deg, #78ddfadd, #aeeafcdd); */
+	background-color: #000;
 }
 .topBannerText {
 	/* font-weight: bold; */
-	color: #000;
+	color: #fff;
 	margin-left: 20px;
 }
 .topBannerText a {
-	color: #000;
+	color: #fff;
 	/* margin-left: 10px; */
+}
+.close {
+	border: none;
+	background: none;
+	cursor: pointer;
+	margin-left: 30px;
+	color: #5a5a5a;
+	font-size: 20px;
 }

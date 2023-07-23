@@ -42,7 +42,9 @@ export default function TopBanner() {
 			</a>
 		</span> */}
 			</p>
-			<button type='button'>X</button>
+			<button className={styles.close} type='button'>
+				X
+			</button>
 		</section>
 	);
 }
