@@ -1,15 +1,11 @@
 import styles from './index.module.css';
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 
 interface SidebarProps {
 	onClosed?: () => void;
 }
 
 export default function Sidebar({onClosed}: SidebarProps) {
-	// const scrollable = (enabled: boolean) => {
-	// 	document.body.style.overflow = enabled ? 'auto' : 'hidden';
-	// };
-
 	const [visible, setVisible] = useState<boolean>(false);
 
 	useEffect(() => {

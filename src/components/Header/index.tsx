@@ -34,10 +34,6 @@ export default function Header({onClickMore}: HeaderProps) {
 		};
 	}, []);
 
-	useEffect(() => {
-		console.log(router.pathname);
-	}, [router.pathname]);
-
 	return (
 		<div
 			className={styles.stickyHeader}
