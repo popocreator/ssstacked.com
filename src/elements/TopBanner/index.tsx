@@ -1,11 +1,8 @@
-import Image, {ImageLoaderProps} from 'next/image';
+import Image from 'next/image';
 import styles from './index.module.css';
 import React from 'react';
 import UkraineFlag from '@/assets/ukrainian-flag.png';
-
-const imageLoader = ({src, width, quality}: ImageLoaderProps) => {
-	return `${src}?w=${width}&&q=${quality || 75}`;
-};
+import imageLoader from '@/lib/imageLoader';
 
 export default function TopBanner() {
 	return (
@@ -13,7 +10,6 @@ export default function TopBanner() {
 			<Image
 				src={UkraineFlag}
 				alt={'Ukraine Flag'}
-				// width={40}
 				height={36}
 				loader={imageLoader}
 			/>
