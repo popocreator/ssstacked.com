@@ -23,13 +23,13 @@ export default function Home() {
 							</div>
 							<div className={styles.lineText}>
 								<p>
-									with a
+									every challenge
 									<span />
 								</p>
 							</div>
 							<div className={styles.lineText}>
 								<p>
-									every challenge
+									with a
 									<span />
 								</p>
 							</div>
