@@ -24,7 +24,7 @@ export default function Sidebar({onClosed}: SidebarProps) {
 			className={`${styles.container} ${visible ? styles.containerActive : ''}`}
 		>
 			<div className={styles.background} onClick={handleClose}></div>
-			<div className={styles.content}>Content</div>
+			<div className={styles.content}></div>
 		</aside>
 	);
 }
