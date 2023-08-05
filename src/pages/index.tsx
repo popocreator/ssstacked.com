@@ -42,6 +42,11 @@ export default function Home() {
 						</h2>
 					</div>
 				</section>
+				<section className='section'>시간 확보를 위한 일정 관리</section>
+				<section className='section'>빠른 회고 사이클</section>
+				<section className='section'>공식 문서를 통한 기록</section>
+				<section className='section'>전반적인 기술 스택의 템플릿화</section>
+				<section className='section'>기록에 도움을 주는 서비스들</section>
 			</main>
 			<div style={{height: '500vh'}}></div>
 		</LandingLayout>
