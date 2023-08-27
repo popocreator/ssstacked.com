@@ -76,7 +76,17 @@ export default function Home() {
 						</h3>
 					</section>
 				</section>
-				<section className='section'>빠른 회고 사이클</section>
+				<section className='section'>
+					<div className='title'>빠른 회고 사이클</div>
+					<div className='subtitle'>
+						빠른 성장을 위해서는 현재 상황을 감정적으로 받아들이지 말아라. 라는
+						말을 하면 무책임하다고 생각한다. 사람이 감정을 억제할 수 있는 능력은
+						가지고 있지 않다고 생각한다. 따라서 특정 사건이 발생했을 때 감정적인
+						부분은 그대로 느끼고, 그 사건을 객관화 해야 한다. 항상 하나의
+						사건에는 감정적으로 느끼는 부분과 실제로 어떤 문제와 개선점들이 있을
+						수 있는지를 나누어서 생각해야 한다.
+					</div>
+				</section>
 				<section className='section'>공식 문서를 통한 기록</section>
 				<section className='section'>전반적인 기술 스택의 템플릿화</section>
 				<section className='section'>기록에 도움을 주는 서비스들</section>
