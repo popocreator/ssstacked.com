@@ -19,7 +19,8 @@
 	/* background-color: #fccb06; */
 	/* background-color: #f9c802; */
 	/* background-color: #ffffff00; */
-	background-color: #ffffff;
+	/* background-color: #ffffff; */
+	background-color: #f4f4f4;
 }
 .container {
 	display: flex;
@@ -30,7 +31,7 @@
 	height: 100%;
 	max-width: 1400px;
 	margin: 0 auto;
-	padding: 0 30px;
+	padding: 0 80px;
 }
 .gnb {
 	display: flex;

@@ -10,28 +10,22 @@
 	height: 100%;
 	max-width: 1400px;
 	margin: 0 auto;
-	padding: 0 30px;
-	padding-top: 30px;
+	/* padding: 0 30px; */
+	padding: 0 80px;
 }
 .mainBannerTitle {
 	text-transform: uppercase;
-	font-size: 80px;
-	letter-spacing: -0.8px;
-	font-weight: bold;
-	line-height: 0.9;
+	font-size: 100px;
+	/* letter-spacing: -0.8px; */
+	font-weight: 700;
+	margin-bottom: 70px;
 }
 .lineText {
 }
-.lineText p {
+.mainBannerTitle p {
 	position: relative;
-	display: inline-flex;
-}
-.lineText span {
-	display: flex;
-	position: absolute;
-	left: 0;
-	bottom: 10px;
-	height: 10px;
-	width: 100%;
-	background-color: #0066ff55;
+	letter-spacing: -2.5px;
+	padding: 0;
+	margin: 0;
+	line-height: 85px;
 }

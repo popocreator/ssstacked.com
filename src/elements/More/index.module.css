@@ -1,49 +1,27 @@
 .more_button {
-	height: 30px;
-	width: 40px;
 	position: relative;
-	padding: 0;
-	margin: 0;
 	margin-left: auto;
 	cursor: pointer;
+	padding: 10px 0;
+	display: flex;
+	align-items: center;
 }
-.more_line_1 {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 2px;
-	width: 100%;
+.more_circle {
+	display: inline-flex;
+	height: 4px;
+	width: 4px;
+	border-radius: 4px;
 	background-color: #000;
 }
-.more_button:hover .more_line_1 {
-	top: 14px;
-	transform-origin: left;
-	transform: rotateZ(-45deg);
-	width: 80%;
-	/* transition: transform 0.3s; */
+.more_circle:nth-child(2) {
+	margin-left: 3px;
+	margin-right: 3px;
+}
+.more_button:hover .more_circle:nth-child(1) {
+	transform: translateX(-2px);
 	transition: all 0.3s;
 }
-.more_line_2 {
-	position: absolute;
-	top: 14px;
-	left: 0;
-	height: 2px;
-	width: 100%;
-	background-color: #000;
-}
-.more_line_3 {
-	position: absolute;
-	top: 28px;
-	left: 0;
-	height: 2px;
-	width: 100%;
-	background-color: #000;
-}
-.more_button:hover .more_line_3 {
-	top: 14px;
-	transform-origin: left;
-	transform: rotateZ(45deg);
-	width: 80%;
-	/* transition: transform 0.3s; */
+.more_button:hover .more_circle:nth-child(3) {
+	transform: translateX(2px);
 	transition: all 0.3s;
 }

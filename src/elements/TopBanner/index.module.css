@@ -13,6 +13,10 @@
 	color: #fff;
 	margin-left: 20px;
 }
+.topBannerText span {
+	/* font-weight: bold; */
+	color: #fff;
+}
 .topBannerText a {
 	color: #fff;
 	/* margin-left: 10px; */
