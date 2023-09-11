@@ -7,7 +7,7 @@ export default function Logo() {
 	return (
 		<h1 className={styles.logo} title='Homepage Logo'>
 			<Link href='/'>
-				<LogoImage />
+				<LogoImage height='22' />
 			</Link>
 		</h1>
 	);
