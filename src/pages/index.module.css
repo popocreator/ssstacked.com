@@ -13,6 +13,10 @@
 	/* padding: 0 30px; */
 	padding: 0 80px;
 }
+.column {
+	flex-direction: column;
+	align-items: flex-start;
+}
 .mainBannerTitle {
 	text-transform: uppercase;
 	font-size: 100px;
@@ -28,4 +32,23 @@
 	padding: 0;
 	margin: 0;
 	line-height: 85px;
+}
+.opensource {
+	border-top: 1px solid #252422;
+	padding: 40px 30px;
+	width: 100%;
+}
+.opensourceTitle {
+	font-weight: 400;
+	font-size: 28px;
+}
+.opensourceSummary {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	opacity: 0.8;
+	font-size: 20px;
+}
+.opensourceDescription {
+	opacity: 0.3;
+	margin-top: 10px;
 }
