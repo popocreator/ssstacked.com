@@ -1,0 +1,58 @@
+.container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
+	/* padding: 0 30px; */
+	padding: 0 80px;
+}
+.column {
+	flex-direction: column;
+	align-items: flex-start;
+}
+.opensourceHeader {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 50px;
+	width: 100%;
+}
+.opensourceGroupTitle {
+	font-size: 40px;
+	text-transform: uppercase;
+	letter-spacing: -1.5px;
+}
+.opensourceViewAll {
+	margin-left: auto;
+	font-size: 11px;
+	font-weight: bold;
+	border: 1px solid #252422;
+	border-radius: 20px;
+	padding: 8px 30px;
+}
+.opensource {
+	border-top: 1px solid #252422;
+	padding: 40px 30px;
+	width: 100%;
+}
+.opensource:last-child {
+	border-bottom: 1px solid #252422;
+}
+.opensourceTitle {
+	font-weight: 400;
+	font-size: 28px;
+}
+.opensourceSummary {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	opacity: 0.8;
+	font-size: 20px;
+}
+.opensourceDescription {
+	opacity: 0.3;
+	margin-top: 10px;
+}
