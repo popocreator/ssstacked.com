@@ -1,0 +1,44 @@
+.container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0 80px;
+}
+.column {
+	flex-direction: column;
+	align-items: flex-start;
+}
+.header {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	width: 100%;
+	border-bottom: 1px solid #252422;
+	padding: 40px 0;
+}
+.headerLinkList {
+	display: flex;
+	flex-direction: row;
+}
+.headerLink {
+}
+.header li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin-right: 40px;
+}
+.header li:last-child {
+	margin-right: 0;
+}
+.headerDescription {
+	margin-left: auto;
+	width: 400px;
+	line-height: 1.6;
+	font-size: 18px;
+}

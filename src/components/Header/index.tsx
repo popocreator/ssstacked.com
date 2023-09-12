@@ -46,17 +46,22 @@ export default function Header({onClickMore}: HeaderProps) {
 				<div className={styles.container}>
 					<Logo />
 					<ul className={styles.gnb}>
-						<GlobalLink active={'/' === router.pathname} href='/'>
+						<GlobalLink
+							active={
+								'/' === router.pathname ||
+								'/services' === router.pathname ||
+								'/libraries' === router.pathname ||
+								'/templates' === router.pathname
+							}
+							href='/'
+						>
 							Home
 						</GlobalLink>
 						<GlobalLink active={'/about' === router.pathname} href='/about'>
 							About
 						</GlobalLink>
-						<GlobalLink
-							active={'/services' === router.pathname}
-							href='/services'
-						>
-							Services
+						<GlobalLink active={'/careers' === router.pathname} href='/careers'>
+							Careers
 						</GlobalLink>
 						<GlobalLink active={'/blog' === router.pathname} href='/blog'>
 							Blog

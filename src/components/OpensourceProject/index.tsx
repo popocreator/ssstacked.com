@@ -1,9 +1,9 @@
 import styles from './index.module.css';
 import React, {useEffect, useRef, useState} from 'react';
 
-interface OpensourceListProps {}
+interface OpensourceProjectProps {}
 
-export default function OpensourceList({}: OpensourceListProps) {
+export default function OpensourceProject({}: OpensourceProjectProps) {
 	return (
 		<section className='section'>
 			<div className={styles.container + ' ' + styles.column}>
