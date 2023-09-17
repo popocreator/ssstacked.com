@@ -10,3 +10,10 @@ sudo yum-config-manager --enable epel*
 # Install certbot
 sudo yum install -y certbot python2-certbot-apache
 sudo yum install certbot-nginx
+
+# Change nginx.conf
+# - /etc/XXX/nginx.conf 수정
+# - server_name "_" -> ssstacked.com
+
+# Set domain
+sudo certbot --nginx ssstacked.com
