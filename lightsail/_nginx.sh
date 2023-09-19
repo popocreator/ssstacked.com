@@ -6,4 +6,6 @@ nginx -v
 sudo fuser -k 80/tcp
 sudo systemctl enable nginx
 sudo systemctl start nginx
+
+# Print status NGINX
 sudo systemctl status nginx
