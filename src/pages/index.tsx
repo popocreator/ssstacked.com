@@ -19,7 +19,6 @@ export default function Home() {
 			<main>
 				<MainBanner />
 				{/* <OpensourceProject /> */}
-				{/* <ConferencesAndMeetups /> */}
 				<Projects />
 				<Certifications />
 				<ConferencesAndMeetups />
