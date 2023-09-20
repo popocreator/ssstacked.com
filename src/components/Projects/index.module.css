@@ -42,3 +42,15 @@
 	line-height: 1.6;
 	font-size: 18px;
 }
+.projectList {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+.project {
+	width: 360px;
+	height: 560px;
+	border-radius: 40px;
+	background-color: #252422;
+}

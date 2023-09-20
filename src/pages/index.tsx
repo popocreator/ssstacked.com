@@ -18,8 +18,8 @@ export default function Home() {
 			</Head>
 			<main>
 				<MainBanner />
-				{/* <OpensourceProject /> */}
 				<Projects />
+				<OpensourceProject />
 				<Certifications />
 				<ConferencesAndMeetups />
 			</main>
