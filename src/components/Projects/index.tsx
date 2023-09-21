@@ -42,20 +42,30 @@ export default function Projects({}: ProjectsProps) {
 				</header>
 				{/* Services */}
 				<section className={styles.projectList}>
-					<div className={styles.project}>Collection of Interaction</div>
-					<div className={styles.project}>Design Snack</div>
-					<div className={styles.project}>Identity Service Mocking</div>
+					<div className={styles.webProject}>Collection of Interaction</div>
+					<div className={styles.webProject}>Design Snack</div>
+					<div className={styles.webProject}>Identity Service Mocking</div>
 				</section>
 				{/* Libraries */}
 				<section className={styles.projectList}>
 					{/* React */}
-					<div className={styles.project}>@ux-monster/react-smooth-scroll</div>
+					<div className={styles.webProject}>
+						@ux-monster/react-smooth-scroll
+					</div>
 					{/* React Native */}
-					<div className={styles.project}>@ux-monster/react-native-slider</div>
-					<div className={styles.project}>@ux-monster/react-native-toast</div>
-					<div className={styles.project}>@ux-monster/react-native-tooltip</div>
-					<div className={styles.project}>
-						@ux-monster/react-native-storybook
+					<div className={styles.row}>
+						<div className={styles.mobileProject}>
+							@ux-monster/react-native-slider
+						</div>
+						<div className={styles.mobileProject}>
+							@ux-monster/react-native-toast
+						</div>
+						<div className={styles.mobileProject}>
+							@ux-monster/react-native-tooltip
+						</div>
+						<div className={styles.mobileProject}>
+							@ux-monster/react-native-storybook
+						</div>
 					</div>
 				</section>
 				{/* Templates */}
